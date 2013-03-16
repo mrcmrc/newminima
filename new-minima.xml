@@ -16,7 +16,8 @@
         </b:if>
 
         <b:include data='blog' name='all-head-content'/>
-            <b:if cond='data:blog.homepageUrl == data:blog.url'>
+        
+        <b:if cond='data:blog.homepageUrl == data:blog.url'>
             <meta content='DESCRIÇÃO DO BLOG' name='description'/>
             <meta content='index, follow' name='robots'/>
         </b:if>
@@ -98,7 +99,8 @@
                                             <a expr:name='"comment-" + data:comment.id'/>
                                             <b:if cond='data:comment.authorUrl'>
                                                 <a expr:href='data:comment.authorUrl' rel='external nofollow'><data:comment.author/></a>
-                                                <b:else/> <data:comment.author/>
+                                                <b:else/> 
+                                            <data:comment.author/>
                                             </b:if>
                                             <span>disse:</span>
                                         </li>
@@ -203,43 +205,33 @@
                             </div>
                         </b:includable>
 
-                        <!-- backlinks -->
                         <b:includable id='backlinks' var='post'>
                             <a name='links'/>
                             <h4><data:post.backlinksLabel/></h4>
-
                             <b:if cond='data:post.numBacklinks != 0'>
                                 <ul id='comments-block'>
                                     <b:loop values='data:post.backlinks' var='backlink'>
                                         <div class='collapsed-backlink backlink-control'>
                                             <li class='comment-title'>
                                                 <span class='backlink-toggle-zippy'>&#160;</span>
-                                                <a expr:href='data:backlink.url' rel='external nofollow'><data:backlink.title/></a>
-                                                <b:include data='backlink' name='backlinkDeleteIcon'/>
+                                                    <a expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></a>
+                                                    <b:include data='backlink' name='backlinkDeleteIcon'/>
                                             </li>
-
                                             <li class='comment-body collapseable'>
                                                 <data:backlink.snippet/>
                                             </li>
-
                                             <li class='comment-footer collapseable'>
-                                                <span class='comment-author'>
-                                                    <data:post.authorLabel/>
-                                                    <data:backlink.author/>
-                                                </span>
-
-                                                <span class='comment-timestamp'>
-                                                    <data:post.timestampLabel/>
-                                                    <data:backlink.timestamp/>
-                                                </span>
+                                                <span class='comment-author'><data:post.authorLabel/>
+                                                <data:backlink.author/></span>
+                                                <span class='comment-timestamp'><data:post.timestampLabel/>
+                                                <data:backlink.timestamp/></span>
                                             </li>
                                         </div>
                                     </b:loop>
                                 </ul>
                             </b:if>
-
                             <p class='comment-footer'>
-                                <a class='comment-link' expr:href='data:post.createLinkUrl' rel="external nofollow" id='b-backlink' target='_blank'><data:post.createLinkLabel/></a>
+                                <a class='comment-link' expr:href='data:post.createLinkUrl' id='b-backlink' target='_blank'><data:post.createLinkLabel/></a>
                             </p>
                         </b:includable>
 
@@ -263,7 +255,6 @@
 
                         <b:includable id='feedLinks'>
                             <b:if cond='data:blog.pageType != "item"'> 
-                                    <!-- Blog feed links -->
                                     <b:if cond='data:feedLinks'>
                                         <div id='blog-feeds'>
                                             <b:include data='feedLinks' name='feedLinksBody'/>
@@ -272,7 +263,6 @@
 
                                 <b:else/> 
 
-                                <!-- Post feed links -->
                                 <div id='post-feeds'>
                                     <b:loop values='data:posts' var='post'>
                                         <b:if cond='data:post.allowComments'>
@@ -285,19 +275,18 @@
                             </b:if>
                         </b:includable>
 
-                        <!-- Navegação do blog -->
                         <b:includable id='nextprev'>
                             <nav id='blog-pager'>
                                 <b:if cond='data:newerPageUrl'>
-                                    <a rel="prev" expr:href='data:newerPageUrl' expr:title='data:newerPageTitle' id='blog-pager-newer-link'><data:newerPageTitle/></a>
+                                    <a rel='prev' expr:href='data:newerPageUrl' expr:title='data:newerPageTitle' id='blog-pager-newer-link'><data:newerPageTitle/></a>
                                 </b:if>
 
                                 <b:if cond='data:olderPageUrl'>
-                                    <a rel="next" expr:href='data:olderPageUrl' expr:title='data:olderPageTitle' id='blog-pager-older-link'><data:olderPageTitle/></a>
+                                    <a rel='next' expr:href='data:olderPageUrl' expr:title='data:olderPageTitle' id='blog-pager-older-link'><data:olderPageTitle/></a>
                                 </b:if>
 
                                 <b:if cond='data:blog.homepageUrl != data:blog.url'>
-                                    <a rel="home" class='home-link' expr:href='data:blog.homepageUrl'>Home</a>
+                                    <a rel='home' class='home-link' expr:href='data:blog.homepageUrl'>Home</a>
                                 </b:if>
                             </nav>
                             <div class='clear'></div>
@@ -364,7 +353,6 @@
                                             </b:if>
                                         </span>
 
-                                        <!-- backlinks -->
                                         <span class='post-backlinks post-comment-link'>
                                             <b:if cond='data:blog.pageType != "item"'>
                                                 <b:if cond='data:post.showBacklinks'>
@@ -403,11 +391,12 @@
                                     </footer>
 
                                     <footer class='post-footer-line post-footer-line-3'></footer>
-                                </div> <!-- Fim do .post-footer -->
+                                </div>
                             </div>
                         </b:includable>
                     </b:widget>
                 </b:section>
+
               </main> <!-- Fim do #main -->
 
               <!-- Sidebar -->
