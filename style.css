@@ -336,6 +336,10 @@ a img {
 /* =Header
 ---------------------------------------------- */
 
+#skiplinks {
+  display: none;
+}
+
 #cabecalho {
   width: 890px; /* Largura do cabeçalho */
 }
