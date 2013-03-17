@@ -1,4 +1,4 @@
-NewMinima
+NewMinima - http://new-minima.blogspot.com.br/
 =========
 
 O <strong>NewMinima</strong> é uma releitura do Minima, criado por <cite><a href="http://stopdesign.com/">David Bowman</a></cite> em <time datetime="2004-26-02">2004</time>, mas com base nas tecnologias atuais. A estrutura é baseada em HTML5, mesmo o Blogger/blogspot não aceitando muito bem esta tecnologia podemos aplica-la, e assim, tentar tirar proveito do máximo que o mesmo permite.
