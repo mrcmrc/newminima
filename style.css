@@ -9,11 +9,11 @@ Date:   26 Feb 2004
 Modified By
 Designer: Kevin Oliveira
 URL:    www.kevinoliveira.com.br
-Date:   15 Mar 2013
+Date:   15/03/2013
 Support:  me@kevinoliveira.com.br
 ----------------------------------------------- */
 
-/* =Reset (https://git.io/normalize)
+/* =Reset (git.io/normalize)
 --------------------------------------------- */
 
 html, body, div, span, applet, object, iframe, 
@@ -142,6 +142,19 @@ h3 small {
 
 h4 small {
   font-size: 14px;
+}
+
+ol li,
+ul li {
+  margin: 0 45px;
+}
+
+ol ol,
+ul ul,
+ul li ul,
+ol li ol {
+  margin: 0 15px;
+  padding: 5px;
 }
 
 abbr[title] {
@@ -298,10 +311,6 @@ table {
   border-spacing: 0;
 }
 
-.clear {
-  clear: both;
-}
-
 /* =Global 
 --------------------------------------------- */
 body {
@@ -387,14 +396,13 @@ a img {
 
 /* =Content */
 #content-wrapper {
-
+  margin-top: 2.2em;
 }
 
 /* =Main */
 #main-wrapper {
   width: 450px; /* largura da coluna de posts */
   float: left;
-  margin: 0px 10px;
 }
 
 .date-header {
@@ -453,6 +461,7 @@ a img {
   line-height: 1.4em;
   text-transform:uppercase;
   letter-spacing:.2em;
+  color: $sidebarcolor;
 }
 
 #comments-block {
@@ -546,4 +555,5 @@ a img {
 ----------------------------------------------- */
 #footer {
   width: 100%;
+  padding: 10px 0;
 }
