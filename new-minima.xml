@@ -38,8 +38,7 @@
 
             <!-- links para acessibilidade -->
             <nav id='skiplinks'>
-              <a href='#main'>vá direto ao conteúdo</a> |
-              <a href='#sidebar'>vá direto à sidebar</a>
+              <a href='#main'>vá direto ao conteúdo</a> | <a href='#sidebar'>vá direto à sidebar</a>
             </nav>
 
             <header id='cabecalho'>
@@ -114,12 +113,12 @@
                                         </li>
 
                                         <li class='comment-footer'>
-                                            <span class='comment-timestamp'>
+                                            <time class='comment-timestamp'>
                                                 <a expr:href='"#comment-" + data:comment.id' title='comment permalink'>
                                                     <data:comment.timestamp/>
                                                 </a>
                                                 <b:include data='comment' name='commentDeleteIcon'/>
-                                            </span>
+                                            </time>
                                         </li>
 
                                     </b:loop>
@@ -170,7 +169,7 @@
                         <div id='blog-posts'>
                             <b:loop values='data:posts' var='post'>
                                 <b:if cond='data:post.dateHeader'>
-                                    <time class='date-header' expr:datetime="data:post.dateHeader"><data:post.dateHeader/></time>
+                                    <time class='date-header'><data:post.dateHeader/></time>
                                 </b:if>
                                 <b:include data='post' name='post'/>
                                     <b:if cond='data:blog.pageType == "item"'>
@@ -223,8 +222,8 @@
                                             <li class='comment-footer collapseable'>
                                                 <span class='comment-author'><data:post.authorLabel/>
                                                 <data:backlink.author/></span>
-                                                <span class='comment-timestamp'><data:post.timestampLabel/>
-                                                <data:backlink.timestamp/></span>
+                                                <time class='comment-timestamp'><data:post.timestampLabel/>
+                                                <data:backlink.timestamp/></time>
                                             </li>
                                         </div>
                                     </b:loop>
@@ -328,14 +327,14 @@
                                             </b:if>
                                         </span>
 
-                                        <span class='post-timestamp'>
+                                        <time class='post-timestamp'>
                                             <b:if cond='data:top.showTimestamp'>
                                                 <data:top.timestampLabel/>
                                                 <b:if cond='data:post.url'>
-                                                    <a class='timestamp-link' expr:href='data:post.url' expr:title='"Link permanente para" + data:post.title'><data:post.timestamp/></a>
+                                                    <a class='timestamp-link' expr:href='data:post.url' expr:title='"Link permanente para " + data:post.title'><data:post.timestamp/></a>
                                                 </b:if>
                                             </b:if>
-                                        </span>
+                                        </time>
 
                                         <span class='post-comment-link'>
                                             <b:if cond='data:blog.pageType != "item"'>
@@ -400,37 +399,64 @@
               </main> <!-- Fim do #main -->
 
               <!-- Sidebar -->
-              <div id='sidebar'>
-                <aside class='widget'>
-                  <h3>Exemplo 1</h3>
-                  <div class='conteudo-widget'>
-                      
-                  </div>
-                </aside>
+              <aside id='sidebar'>
+                <b:section class='sidebar' id='sidebar2' preferred='yes'>
+                    <b:widget id='HTML1' locked='false' title='Exemplo 1' type='HTML'>
+                        <b:includable id='main'>
+                            <b:if cond='data:title != &quot;&quot;'>
+                                <h3 class='title'><data:title/></h3>
+                            </b:if>
+                            <div class='widget-content'>
 
-                <aside class='widget'>
-                  <h3>Exemplo 2</h3>
-                  <div class='conteudo-widget'>
-                      
-                  </div>
-                </aside>
+                            </div>
+                            <b:include name='quickedit'/>
+                        </b:includable>
+                    </b:widget>
 
-                <aside class='widget'>
-                  <h3>Exemplo 2</h3>
-                  <div class='conteudo-widget'>
-                      
-                  </div>
-                </aside>
-              </div> <!-- Fim da #sidebar -->
+                    <b:widget id='HTML2' locked='false' title='Exemplo 1' type='HTML'>
+                        <b:includable id='main'>
+                            <b:if cond='data:title != &quot;&quot;'>
+                                <h3 class='title'><data:title/></h3>
+                            </b:if>
+                            <div class='widget-content'>
+
+                            </div>
+                            <b:include name='quickedit'/>
+                        </b:includable>
+                    </b:widget>
+
+                    <b:widget id='HTML3' locked='false' title='Exemplo 1' type='HTML'>
+                        <b:includable id='main'>
+                            <b:if cond='data:title != &quot;&quot;'>
+                                <h3 class='title'><data:title/></h3>
+                            </b:if>
+                            <div class='widget-content'>
+
+                            </div>
+                            <b:include name='quickedit'/>
+                        </b:includable>
+                    </b:widget>
+
+                    <b:widget id='HTML4' locked='false' title='Exemplo 1' type='HTML'>
+                        <b:includable id='main'>
+                            <b:if cond='data:title != &quot;&quot;'>
+                                <h3 class='title'><data:title/></h3>
+                            </b:if>
+                            <div class='widget-content'>
+
+                            </div>
+                            <b:include name='quickedit'/>
+                        </b:includable>
+                    </b:widget>
+                </b:section>
+              </aside> <!-- Fim da #sidebar -->
 
             </section> <!-- end content-wrapper -->
         </div> <!-- end outer-wrapper -->
 
         <div class='clear'><br/></div>
 
-        <footer id='footer'>
-          copyright © 2013 <data:blog.title/>.
-        </footer>
+        <footer id='footer'>copyright © 2013 <data:blog.title/></footer>
 
         <!-- Google Analytics: troque UA-XXXXX-X pelo ID do seu site. -->
         <script>
