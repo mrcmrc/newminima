@@ -449,7 +449,6 @@ a img {
   line-height: 1.4em;
   text-transform:uppercase;
   letter-spacing:.2em;
-  color: $sidebarcolor;
 }
 
 #comments-block {
