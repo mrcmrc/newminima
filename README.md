@@ -26,9 +26,4 @@ Como o Blogger não é um CMS e não está instalado em seu servidor, o que deve
 <li>Mais informações sobre CSS Interno, Externo e Inline:<br/> http://designereffects.com.br/2011/06/o-que-e-css.html</li>
 </ul>
 
-<strong>Sidebar</strong>:
--------------------------
-
-Infelizmente, como dito anteriormente, o Blogger não aceita muito bem o HTML5 e utilizando-o o painel "layout" não aparece os Widgets, logo, para não dificultar a vida de vocês, não foi utilizado a tag <code>&lt;b:widget&gt;</code>, mas, infelizmente, todos os widgets que aparecem na sidebar deverão ser adicionados no Editor de HTML do Blogger.
-
 Por enquanto é isso, qualquer dúvida ou erro que possa aparecer na instalação do template, crie um <strong>Pull Request</strong> que eu, <a href="https://github.com/omeletesemsal">Kevin Oliveira</a>, ajudarei e/ou arrumarei o mais rápido possível. Obrigado.
