@@ -277,15 +277,15 @@
                         <b:includable id='nextprev'>
                             <nav id='blog-pager'>
                                 <b:if cond='data:newerPageUrl'>
-                                    <a rel='prev' expr:href='data:newerPageUrl' expr:title='data:newerPageTitle' id='blog-pager-newer-link'><data:newerPageTitle/></a>
+                                    <a expr:href='data:newerPageUrl' expr:title='data:newerPageTitle' id='blog-pager-newer-link'><data:newerPageTitle/></a>
                                 </b:if>
 
                                 <b:if cond='data:olderPageUrl'>
-                                    <a rel='next' expr:href='data:olderPageUrl' expr:title='data:olderPageTitle' id='blog-pager-older-link'><data:olderPageTitle/></a>
+                                    <a expr:href='data:olderPageUrl' expr:title='data:olderPageTitle' id='blog-pager-older-link'><data:olderPageTitle/></a>
                                 </b:if>
 
                                 <b:if cond='data:blog.homepageUrl != data:blog.url'>
-                                    <a rel='home' class='home-link' expr:href='data:blog.homepageUrl'>Home</a>
+                                    <a class='home-link' expr:href='data:blog.homepageUrl'>Home</a>
                                 </b:if>
                             </nav>
                             <div class='clear'></div>
