@@ -1,5 +1,10 @@
-NewMinima - http://new-minima.blogspot.com.br/
+NewMinima (template base)
 =========
+
+<ul>
+<li><a href="http://new-minima.blogspot.com.br/">URL do tema</a></li>
+<li><a href="https://www.facebook.com/groups/blogueiros/">Grupo Blogueiros</a>
+</ul>
 
 O <strong>NewMinima</strong> é uma releitura do Minima, criado por <cite><a href="http://stopdesign.com/">David Bowman</a></cite> em <time datetime="2004-26-02">2004</time>, mas com base nas tecnologias atuais. A estrutura é baseada em HTML5, mesmo o Blogger/blogspot não aceitando muito bem esta tecnologia podemos aplica-la, e assim, tentar tirar proveito do máximo que o mesmo permite.
 
