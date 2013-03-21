@@ -57,5 +57,5 @@ Agradecimentos:
 ---------------
 
 <ul>
-<li><a href="http://blog.lucasfads.com.br/2013/03/templates-base-para-wordpress-e-blogger/">Lucas FAdS</a></li>
+<li><a href="http://blog.lucasfads.com.br/2013/03/templates-base-para-wordpress-e-blogger/">LucasFAdS</a></li>
 </ul>
