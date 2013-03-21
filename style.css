@@ -625,6 +625,10 @@ a img {
     page-break-inside: avoid;
     max-width: 100% !important;
   }
+  
+  #sidebar {
+  	display: none;
+  }
 
   @page {
     margin: 0.5cm;
