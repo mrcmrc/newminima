@@ -26,4 +26,12 @@ Como o Blogger não é um CMS e não está instalado em seu servidor, o que deve
 <li>Mais informações sobre CSS Interno, Externo e Inline:<br/> http://designereffects.com.br/2011/06/o-que-e-css.html</li>
 </ul>
 
-Por enquanto é isso, qualquer dúvida ou erro que possa aparecer na instalação do template, crie um <strong>Pull Request</strong> que eu, <a href="https://github.com/omeletesemsal">Kevin Oliveira</a>, ajudarei e/ou arrumarei o mais rápido possível. Obrigado.
+
+Referências:
+-----------
+
+<ul>
+<li><a href="https://necolas.github.com/normalize.css/">normalize.css</a></li>
+<li><a href="https://github.com/h5bp/html5-boilerplate">HTML5 Boilerplate</a></li>
+<li><a href="http://www.ferramentasblog.com/2010/08/codigos-e-tags-condicionais-do-blogger.html">Ferramenta Blog</a></li>
+</ul>
