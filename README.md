@@ -20,7 +20,7 @@ Há diversos tutoriais na internet que lhe ajudam a instalar e editar um templat
 
 Para evitar aquele carregamento massante de CSS Interno, achei melhor colocar todo o CSS dentro de um arquivo externo, que é, com toda a certeza, a melhor maneira.
 
-Como o Blogger não é um CMS e não está instalado em seu servidor, o que devemos fazer é hospedar este arquivo em algum outro servidor, eu recomendo altamente o Dropbox, se quiser, baixe-o: http://db.tt/v65v1gun ;)
+Como o Blogger não é um CMS e não está instalado em seu servidor, o que devemos fazer é hospedar este arquivo em algum outro servidor, eu recomendo altamente o Dropbox, se quiser, <a href="http://db.tt/v65v1gun">baixe-o</a>.
 
 <ul>
 <li>Mais informações sobre CSS Interno, Externo e Inline:<br/> http://designereffects.com.br/2011/06/o-que-e-css.html</li>
@@ -33,5 +33,17 @@ Referências:
 <ul>
 <li><a href="https://necolas.github.com/normalize.css/">normalize.css</a></li>
 <li><a href="https://github.com/h5bp/html5-boilerplate">HTML5 Boilerplate</a></li>
-<li><a href="http://www.ferramentasblog.com/2010/08/codigos-e-tags-condicionais-do-blogger.html">Ferramenta Blog</a></li>
+<li><a href="http://www.ferramentasblog.com/2010/08/codigos-e-tags-condicionais-do-blogger.html">Ferramentas Blog</a></li>
 </ul>
+
+Contribua:
+----------
+
+Para contribuir clique no botão <strong>Fork</strong>, depois crie um <em>Branch</em>, arruma o código e mande de volta criando um <strong>Pull Request</strong>.
+
+Mais informações sobre como contribuir com projetos em <a href="https://help.github.com/categories/63/articles">GitHub Collaborating</a>.
+
+Bugs ou dúvidas?
+----------------
+
+Se você encontrar bugs ou tiver dúvidas de como usar e estilizar este template, crie um <a href="https://github.com/kvnol/newminima/issues">Issue</a>.
