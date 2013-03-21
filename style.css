@@ -161,6 +161,16 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
+@media screen (max-width: 600px) {
+  abbr[title] {
+    border-bottom: none;
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+}
+
 b,
 strong {
   font-weight: bold;
