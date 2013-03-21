@@ -44,7 +44,7 @@ Referências:
 Contribua:
 ----------
 
-Para contribuir clique no botão <strong>Fork</strong>, depois crie um <em>Branch</em>, arruma o código e mande de volta criando um <strong>Pull Request</strong>.
+Para contribuir clique no botão <strong>Fork</strong>, depois crie um <em>Branch</em>, arrume o código e mande de volta criando um <strong>Pull Request</strong>.
 
 Mais informações sobre como contribuir com projetos em <a href="https://help.github.com/categories/63/articles">GitHub Collaborating</a>.
 
