@@ -52,3 +52,10 @@ Bugs ou dúvidas?
 ----------------
 
 Se você encontrar bugs ou tiver dúvidas de como usar e estilizar este template, crie um <a href="https://github.com/kvnol/newminima/issues">Issue</a>.
+
+Agradecimentos:
+---------------
+
+<ul>
+<li><a href="http://blog.lucasfads.com.br/2013/03/templates-base-para-wordpress-e-blogger/">Lucas FAdS</a></li>
+</ul>
