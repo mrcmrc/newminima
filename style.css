@@ -377,6 +377,15 @@ a img {
 
 }
 
+/* logo no cabeçalho:
+#cabecalho h1 a {
+ text-indent: -9999;
+ background-image: url('logo-url.png');
+ width: ;
+ height: ;
+}
+*/
+
 #menu-topo {
 
 }
