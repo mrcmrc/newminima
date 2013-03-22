@@ -58,4 +58,5 @@ Agradecimentos:
 
 <ul>
 <li><a href="http://blog.lucasfads.com.br/2013/03/templates-base-para-wordpress-e-blogger/">LucasFAdS</a></li>
+<li><a href="http://designereffects.com.br/2013/03/newminima-template-base-para-blogger.html">Designer Effects</a></li>
 </ul>
